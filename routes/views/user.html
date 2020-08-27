@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header>
+        <style>
+                body {background-color: blanchedalmond;}
+                h1 {text-align: center; color: crimson;}
+        </style>
+
+        <h1>Welcome to ola cab.</h1>
+</header>
+
+<body>
+        <div id="first-form">
+                <p>If you are a new user than sign up.</p>
+
+                <form action="/user_detail" method="POST">
+                        <label for="username">UserName:</label>
+                        <br>
+                        <input id="username" name="username" placeholder="you" type="text" required minlength="3"
+                                maxlength="15">
+                        <br>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input id="email" name="email" type="email" placeholder="you@email.com" required minlength="3"
+                                maxlength="15">
+                        <br>
+                        <label for="pw">Password:</label>
+                        <br>
+                        <!--Add the pattern attribute to the input below-->
+                        <input id="pw" name="pw" placeholder="password" type="password" required minlength="8"
+                                maxlength="15">
+                        <br>
+                        <input type="submit" value="ragister">
+                </form>
+        </div>
+        <br>
+        <div id="second-form">
+                <p>if You already ragistered than login direct.</p>
+                <form action="/user_detail" method="POST">
+                        <label for="username">UserName:</label>
+                        <br>
+                        <input id="username" name="username" placeholder="you" type="text" required minlength="3"
+                                maxlength="15">
+                        <br>
+                        <label for="pw">Password:</label>
+                        <br>
+                        <!--Add the pattern attribute to the input below-->
+                        <input id="pw" name="pw" placeholder="password" type="password" required minlength="8"
+                                maxlength="15">
+                        <br>
+                        <input type="submit" value="signIn">
+                </form>
+        </div>
+</body>
+
+</html>
