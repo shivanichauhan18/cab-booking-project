@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
-<header>
-        <style>
-                body {background-color: blanchedalmond;}
-                h1 {text-align: center; color: crimson;}
-        </style>
+<style>
+        body {background-color: blanchedalmond; }
+        h1 {text-align: center; color: crimson; }
+</style>
 
-        <h1>Welcome to ola cab.</h1>
-</header>
 
 <body>
-        <div id="first-form">
-                <p>If you are a new user than sign up.</p>
+        <h1>Welcome to ola cab.</h1>
 
-                <form action="/user_detail" method="POST">
-                        <label for="username">UserName:</label>
-                        <br>
-                        <input id="username" name="username" placeholder="you" type="text" required minlength="3"
-                                maxlength="15">
-                        <br>
-                        <label for="email">Email:</label>
-                        <br>
-                        <input id="email" name="email" type="email" placeholder="you@email.com" required minlength="3"
-                                maxlength="15">
-                        <br>
-                        <label for="pw">Password:</label>
-                        <br>
-                        <!--Add the pattern attribute to the input below-->
-                        <input id="pw" name="pw" placeholder="password" type="password" required minlength="8"
-                                maxlength="15">
-                        <br>
-                        <input type="submit" value="ragister">
-                </form>
-        </div>
+        <p>If you are a new user than sign up.</p>
+        <form action="/user_detail" method="post">
+                <label for="username">UserName:</label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="you" required minlength="3"
+                        maxlength="15">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input id="email" name="email" type="email" placeholder="you@email.com" required minlength="3"
+                        maxlength="15">
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <!--Add the pattern attribute to the input below-->
+                <input id="password" name="password" placeholder="password" type="password" required minlength="8"
+                        maxlength="15">
+                <br>
+                <label for="pw">Confirm Password:</label>
+                <br>
+                <input id="rpw" name="rpw" placeholder="confirm password" type="password" required minlength="8"
+                        maxlength="15">
+                <br>
+                <label for="user id">user Id:</label>
+                <br>
+                <input id="customerId" name="customerId" placeholder="user id" type="text" required>
+                <br>
+
+
+
+
+
+
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="name" name="name" required>
+     </br>
+         <label for="email"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" required>
+     
+         <br>
+         <label for="password"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="password" required>
+     
+         <br>
+         <label for="confirm_psw"><b>confirm Password</b></label>
+         <input type="password" placeholder="confirm Password" name="confirm_psw" required>
+         <br><br>
+
+
+
+                <input type="submit" value="ragister">
+        </form>
         <br>
         <div id="second-form">
                 <p>if You already ragistered than login direct.</p>
-                <form action="/user_detail" method="POST">
+                <form action="/user_bookings" method="GET">
                         <label for="username">UserName:</label>
                         <br>
                         <input id="username" name="username" placeholder="you" type="text" required minlength="3"

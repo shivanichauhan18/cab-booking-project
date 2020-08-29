@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{background-color:cornsilk}
+        h2,h3{text-align: center;}
+    </style>
+</head>
+<body>
+    <h2>Welcome to Cab booking app</h2>
+    <h3>add your details</h3>
+        <form action="/user_cab_request/:userId" method="POST">
+          <br>
+          <div class="form-group">
+              <label for="option1">
+                <h4>Your Location</h4>
+              </label>
+              <input type="text" class="form-control" name="startAt" id="startAt" placeholder="first name" title="option not decied yet ">
+          </div>
+          <div class="form-group">
+              <label for="option2">
+                <h4>Your Destination</h4>
+              </label>
+              <input type="text" class="form-control" name="endAt" id="endAt" placeholder="last name" title="enter your last name if any.">
+          </div>
+          <div class="form-group">
+            <label for="user id">
+              <h4>enter once user id</h4>
+            </label>
+            <input type="text" name="userId" id="userId" placeholder="last user id" title="enter your once user id.">
+        </div>
+          <div class="form-group">
+              <br>
+              <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+              <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+          </div>
+        </form>
+</body>

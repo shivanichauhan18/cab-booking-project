@@ -13,7 +13,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
-app.use("/booking",routes)
+app.use("/",routes)
 
 
 
